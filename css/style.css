@@ -1,0 +1,168 @@
+/* Main page settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* header section rules */
+header {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    background-image: url("../img/jumbo.png");
+    background-size: cover;
+    padding: 1% 10% 1% 10%;
+    /* debug rules */
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding: 1% 0 1% 0 ;
+    /* debug rules */
+
+}
+.jumbo_sec {
+    display: flex;
+    text-align: center;
+    flex-direction: column ;
+    align-content: space-between;
+    justify-content: center;
+    color: white;
+    padding: 10% 0 10% 0;
+
+}
+.jumbo_sec h1, .jumbo_sec p, .jumbo_sec button {
+    margin: 20px;
+}
+.jumbo_buttons {
+    display: flex;
+    justify-content: center;
+}
+.jumbo_buttons .black_button {
+    background-color: rgb(36, 36, 36);
+    color: white;
+}
+#logo {
+    /* debug rules */
+    width: fit-content;
+    height: fit-content;
+}
+.link_section {
+    /* debug rules */
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.login {
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
+
+}
+.link_section a {
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+}
+/* main page rules */
+main {
+    display: flex;
+    flex-direction: column;
+    height: 66.4%;
+    width: 100%;
+    /* debug rules */
+    background-color: grey;
+}
+.section_txt {
+    background-color: rgb(35, 185, 255);
+    width: 60%;
+    border: 1px solid black;
+}
+.section {
+    justify-content: center;
+    padding: 1% 10% 1% 10%;
+    display: flex;
+    flex-direction: row;
+    height: 16.6%;
+    width: 100%;
+    /* debug rules */
+    background-color: rgb(255, 255, 255);
+}
+.section[name="grey"]{
+    background-color: rgb(215, 215, 215);
+}
+.section_img_last { 
+    width: 100%;
+    /* debug rules */
+    height: 200px;
+    background-color: green;
+}
+/* footer rules */
+footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* debug rules */
+    width: 100%;
+    height: 16.6%;
+    background-color: rgb(36, 36, 36);
+}
+.end_info {
+    display: flex;
+    flex-basis:content;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    padding: 1% 10% 1% 10%;
+    border-bottom: 1px solid white ;
+    /* debug rules */
+    width: 100%;
+    height: 300px;
+}
+.first_col {
+    width: 30%;
+    /* debug rules */
+    height: 300px;
+    background-color: rgb(255, 152, 224);
+    border: 1px dotted rgb(0, 0, 0);
+}
+.col {
+    width: 17.5%;
+    /* debug rules */
+    height: 300px ;
+    border: 1px dotted rgb(255, 255, 255);
+    background-color: rgb(93, 209, 170);
+}
+.footer_nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1% 10% 1% 10%;
+    /* debug rules */
+    width: 100%;
+    height: 100%;
+    background-color:rgb(36, 36, 36) ;
+}
+.credits {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1% 0 0 0;
+    /* debug rules */
+    background-color: aquamarine;
+    width: 100%;
+    height: 25px;
+}
+button, .end_logo {
+    /* debug rules */
+    background-color: rgb(247, 247, 247);
+    border: none;
+    font-weight: 600;
+    border-radius: 25px;
+    font-size: small;
+    padding: 4px 10px 4px 10px;
+}
