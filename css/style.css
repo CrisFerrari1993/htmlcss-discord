@@ -85,7 +85,7 @@ main {
     flex-flow: wrap column;
     justify-content: center;
     margin: auto;
-    max-width: 100%;
+    max-width: 25%;
 }
 .section h2 {
     margin-bottom: 20px;
