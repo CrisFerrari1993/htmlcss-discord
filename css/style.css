@@ -21,22 +21,18 @@ header {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    justify-content: space-around;
-    width: 100%;
     padding: 1% 0 1% 0 ;
-    gap: 50px;
-    /* debug rules */
-
 }
 .jumbo_sec {
     display: flex;
     text-align: center;
-    flex-direction: column ;
-    align-content: space-between;
-    justify-content: center;
+    flex-flow: column wrap ;
     color: white;
-    padding: 0 20% 0 20%;
-
+    padding: 5% 20% 5% 20%;
+}
+.responsive{
+   max-width: 100%;
+   height: auto; 
 }
 .jumbo_sec h1, .jumbo_sec p, .jumbo_sec button {
     margin: 20px;
@@ -49,16 +45,10 @@ header {
     background-color: rgb(36, 36, 36);
     color: white;
 }
-#logo {
-    /* debug rules */
-    width: fit-content;
-    height: fit-content;
-}
 .link_section {
     display: flex;
-    justify-content: center;
-    text-align: center;
-    gap: 40px;
+    justify-content: space-evenly;
+    flex-grow: 1;
 }
 .login {
     display: flex;
@@ -75,24 +65,23 @@ header {
 main {
     display: flex;
     flex-direction: column;
-}
-.section_txt {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    padding: 0 8% 0 8%;
-}
-.section h2 {
-    margin-bottom: 20px;
-}
-.section_img {
-    padding: 10% 0 10% 0;
+    max-width: 100%;
 }
 .section {
     display: flex;
+    justify-content: space-around;
     background-color: white;
-    padding: 0 10% 0 10%;
-
+    padding: 5%;
+    width: 100%;
+}
+.section_txt {
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    padding: 5%;
+}
+.section h2 {
+    margin-bottom: 20px;
 }
 .section[name="grey"]{
     background-color: rgb(215, 215, 215);
@@ -113,17 +102,29 @@ main {
     background-color: rgb(104, 162, 212);
     color: white;
 }
-
 /* footer rules */
 footer {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    /* debug rules */
-    width: 100%;
-    height: 16.6%;
     background-color: rgb(36, 36, 36);
+    padding: 2% ;
+}
+footer h2, footer h5 {
+    color: rgb(104, 162, 212);
+    margin-bottom: 20px;
+}
+footer section {
+    display: flex;
+    align-content: stretch;
+    gap: 10px;
+    margin-bottom: 20px;
+    color: white;
+}
+footer img {
+    height: 15px;
+    width: 20px;
 }
 .end_info {
     display: flex;
@@ -132,54 +133,57 @@ footer {
     align-items: stretch;
     justify-content: center;
     padding: 1% 10% 1% 10%;
-    border-bottom: 1px solid white ;
     /* debug rules */
     width: 100%;
     height: 300px;
 }
 .first_col {
-    width: 30%;
-    /* debug rules */
-    height: 300px;
-    background-color: rgb(255, 152, 224);
-    border: 1px dotted rgb(0, 0, 0);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    max-width: 30%;
+    padding-right: 30px;
+    
+}
+.col a {
+    list-style: none;
+    color: white;
+    font-size:small;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-decoration: none;
 }
 .col {
+    margin-top: 10px;
     width: 17.5%;
-    /* debug rules */
-    height: 300px ;
-    border: 1px dotted rgb(255, 255, 255);
-    background-color: rgb(93, 209, 170);
-}
-.footer_nav {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1% 10% 1% 10%;
-    /* debug rules */
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    max-width: 17.5%;
+    padding-right: 30px;
+}
+.end_info_footer {
+    border-top: 1px solid rgb(125, 177, 255);
+    padding-top: 1%;
     width: 100%;
-    height: 100%;
-    background-color:rgb(36, 36, 36) ;
-}
-.credits {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    margin: 1% 0 0 0;
-    /* debug rules */
-    background-color: aquamarine;
-    width: 100%;
-    height: 25px;
+    align-content: center;
 }
-button, .end_logo {
-    /* debug rules */
-    background-color: rgb(247, 247, 247);
+.end_info_footer button {
+    background-color: rgb(125, 177, 255);
+    color: white;
+    border:none;
+}
+.end_info_footer img {
+    height: auto;
+    width: 100px;
+}
+button {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 25px;
+    padding: 4px 10px 4px 10px ;
     border: none;
     font-weight: 600;
-    border-radius: 25px;
-    font-size: small;
-    padding: 4px 10px 4px 10px;
-}
-button::after {
-    box-shadow: 2px solid rgba(0,0,0,0.8);
 }
