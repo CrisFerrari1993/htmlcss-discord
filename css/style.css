@@ -60,60 +60,51 @@
     margin-bottom: 25px;
     color: white;
 }
-
-.responsive{
-   max-width: 100%;
-   height: auto; 
-}
 /* main page rules */
 main {
     display: flex;
     flex-direction: column;
-    max-width: 100%;
 }
-.section {
+section {
+    width: 100%;
     display: flex;
     justify-content: space-around;
-    background-color: white;
-    padding: 5%;
-    width: 100%;
+    align-items: center;
+    padding: 2% 5% 2% 5%;
 }
-.container{
-    display: flex;
-    flex-flow: row;
-    max-width: 100%;
-    margin: auto;
+section.grey{
+    background-color: #f6f6f6 ;
 }
-.section_txt {
+section.column {
+    min-width: 100%;
     display: flex;
-    flex-flow: wrap column;
+    flex-direction: column;
     justify-content: center;
-    margin: auto;
-    max-width: 25%;
+}
+.sect_txt.big {
+    text-align: center;
+}
+.sect_img.big{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.sect_img {
+    width: 50%;
+}
+.sect_img img{
+    max-width: 100%;
 }
 
-.section h2 {
-    margin-bottom: 20px;
+.sect_txt h3,
+section.grey.column {
+    font-size: 25px;
 }
-.section[name="grey"]{
-    background-color: rgb(215, 215, 215);
+.sect_txt {
+    width: 50%;
+    font-size: 20px;
 }
-.last_section { 
-    display: flex;
-    flex-flow: column wrap;
-    align-content: space-around;
-    justify-content: center;
-    text-align: center;
-    padding: 5% 10% 2% 10% ;
-}
-.last_section_txt img {
-    width: 40%;
-}
-.last_section_txt button {
-    margin: 2% 0 10% 0;
-    background-color: rgb(104, 162, 212);
-    color: white;
-}
+
 /* footer rules */
 footer {
     display: flex;
@@ -153,7 +144,7 @@ footer img {
     flex-flow: column wrap;
     justify-content: flex-start;
     max-width: 30%;
-    padding-right: 30px;
+    padding-right: 10px;
     
 }
 .col a {
@@ -194,12 +185,21 @@ footer img {
     display: flex;
     justify-content: center;
 }
+.btn.azure {
+    font-size: 20px;
+    margin-top: 20px;
+    background-color: #5865f2;
+    color: white;
+}
 .btn.black{
     background-color: black;
     color: white;
 }
-.btn {
+.nav_login.btn {
     font-size: 15px;
+}
+.btn {
+    font-size: 18px;
     background-color:#ffffff;
     border-radius: 25px;
     padding: 8px;
