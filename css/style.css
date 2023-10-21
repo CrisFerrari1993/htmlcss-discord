@@ -42,7 +42,7 @@
     background-image: url(../img/jumbo.png);
     background-size:cover;
     background-repeat: no-repeat;
-    max-width: 100%;
+    width: 100vw;
     height: 550px;
     display: flex;
     flex-flow: column wrap;
@@ -64,9 +64,9 @@
 main {
     display: flex;
     flex-direction: column;
+    width: 100vw;
 }
 section {
-    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -118,6 +118,7 @@ footer {
     background-color:#23272a;
     display: flex;
     flex-direction: column;
+    width: 100vw;
 }
 .nav_top {
     display: flex;
