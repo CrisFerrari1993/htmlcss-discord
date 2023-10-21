@@ -261,3 +261,11 @@ footer {
 .btn.bottom {
     margin: 0;
 }
+/* Bonus section */
+.bonus {
+    margin: 0;
+    padding: 0;
+}
+.reverse {
+    transform: rotate(180deg);
+}
