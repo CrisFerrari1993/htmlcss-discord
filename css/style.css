@@ -72,6 +72,9 @@ section {
     align-items: center;
     padding: 2% 5% 2% 5%;
 }
+section .sect_txt h3 {
+    font-size: 30px;
+}
 section.grey{
     background-color: #f6f6f6 ;
 }
@@ -81,7 +84,11 @@ section.column {
     flex-direction: column;
     justify-content: center;
 }
+section.column.grey.last{
+    padding-bottom: 100px;
+}
 .sect_txt.big {
+    padding-top: 40px;
     text-align: center;
 }
 .sect_img.big{
@@ -98,6 +105,7 @@ section.column {
 
 .sect_txt h3,
 section.grey.column {
+    padding-bottom: 50px;
     font-size: 25px;
 }
 .sect_txt {
@@ -107,78 +115,78 @@ section.grey.column {
 
 /* footer rules */
 footer {
+    background-color:#23272a;
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    align-items: center;
-    background-color: rgb(36, 36, 36);
-    padding: 2% ;
 }
-footer h2, footer h5 {
-    color: rgb(104, 162, 212);
-    margin-bottom: 20px;
-}
-footer section {
+.nav_top {
     display: flex;
-    align-content: stretch;
-    gap: 10px;
-    margin-bottom: 20px;
-    color: white;
-}
-footer img {
-    height: 15px;
-    width: 20px;
-}
-.end_info {
-    display: flex;
-    flex-basis:content;
-    flex-direction: row;
-    align-items: stretch;
-    justify-content: center;
-    padding: 1% 10% 1% 10%;
-    border-bottom: 1px solid rgb(125, 177, 255);
     width: 100%;
-}
-.first_col {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: flex-start;
-    max-width: 30%;
-    padding-right: 10px;
-    
-}
-.col a {
-    list-style: none;
-    color: white;
-    font-size:small;
-    font-weight: 600;
-    margin-bottom: 10px;
-    text-decoration: none;
-}
-.col {
-    margin-top: 10px;
-    width: 17.5%;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: flex-start;
-    max-width: 17.5%;
-    padding-left: 50px;
-}
-.end_info_footer {
-    padding: 1% 10% 1% 10%;
-    width: 100%;
-    display: flex;
     justify-content: space-around;
-    align-content: center;
 }
-.end_info_footer button {
-    background-color: rgb(125, 177, 255);
+.nav_down{
+    border-top: 2px solid #363e75 ;
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 10% 2% 10%;
+    align-items: stretch;
+    padding: 30px 0 0 0;
+}
+.nav_col{
+    flex-grow: 1;
+    padding: 2% 10% 0 0;
+
+}
+.nav_col h5 {
+    color:#515ddb;
+    font-size: 15px;
+}
+.nav_col ul {
+    list-style: none;
+}
+.nav_col li{
+    margin: 10px 0 10px 0;
+}
+.nav_col a{
+    text-decoration: none;
     color: white;
-    border:none;
 }
-.end_info_footer img {
-    height: auto;
-    width: 100px;
+.nav_col a:hover {
+    text-decoration: underline 1px white;
+}
+.user_lenguage img {
+    height: 20px;
+    width: 30px;
+}
+.user_lenguage{
+    display: flex;
+    justify-content:flex-start;
+    color: white;
+    align-items: center;
+    align-self: flex-start;
+    margin-bottom: 30px;
+}
+.social ul {
+    display: flex;
+    justify-content:flex-start;
+}
+.social li {
+    list-style: none;
+    margin-right: 20px;
+}
+.social a {
+    color: white;
+}
+.user_lenguage span,
+.user_lenguage i {
+    font-size: 15px;
+    margin: 0 0 0 5px;
+}
+.large {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 5% 2% 0 10% ;
 }
 /* btn rules */
 .jumbo_btn {
@@ -186,7 +194,7 @@ footer img {
     justify-content: center;
 }
 .btn.azure {
-    font-size: 20px;
+    font-size: 15pxpx;
     margin-top: 20px;
     background-color: #5865f2;
     color: white;
@@ -210,4 +218,7 @@ footer img {
 .btn:hover{
     cursor: pointer;
     box-shadow: 5px 5px rgba(0,0,0,0.5);
+}
+.btn.bottom {
+    margin: 0;
 }
