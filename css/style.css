@@ -98,6 +98,9 @@ section.column.grey.last{
 }
 .sect_img {
     width: 50%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 .sect_img img{
     max-width: 100%;
